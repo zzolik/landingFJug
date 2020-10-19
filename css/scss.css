@@ -1,0 +1,742 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: MontserratBlack;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+body {
+  overflow-x: hidden;
+}
+
+#out .block1 {
+  margin: 139px 0 0 82px;
+}
+#out .block1 > div {
+  color: #000;
+}
+#out .block1 > div > img {
+  margin-bottom: 60px;
+}
+#out .block1 > div h1 {
+  font-family: "MontserratBlack", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  margin-bottom: 25px;
+}
+#out .block1 > div p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300px;
+  line-height: 27px;
+  letter-spacing: 0em;
+  font-family: "MontserratLight", sans-serif;
+  width: 505px;
+}
+#out .block1 > div p span {
+  margin-top: 10px;
+}
+#out .block1 .buttons {
+  margin-top: 48px;
+}
+#out .block1 .buttons div:nth-child(1) > button, #out .block1 .buttons div:nth-child(3) > button {
+  background: #FBCB03;
+  width: 210px;
+  height: 65px;
+  border-radius: 12px;
+  font-family: "MontserratLight";
+  font-size: 18px;
+  line-height: 150%;
+}
+#out .block1 .buttons div:nth-child(2) > button, #out .block1 .buttons div:nth-child(4) > button {
+  background: #000;
+  color: #fff;
+  width: 210px;
+  height: 65px;
+  border-radius: 12px;
+  font-family: "MontserratLight";
+  font-size: 18px;
+  line-height: 150%;
+  margin-left: 21px;
+}
+#out .linear {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+  height: 611px;
+  transform: rotate(-30deg);
+  right: -100px;
+  top: -170px;
+  position: absolute;
+}
+#out .linear .sticks {
+  position: absolute;
+  width: 80px;
+  height: 500px;
+  left: -1000px;
+  animation: move 4s infinite linear;
+}
+@keyframes move {
+  from {
+    left: -100px;
+    bottom: -10px;
+  }
+  to {
+    left: 800px;
+    bottom: -10px;
+  }
+}
+#out .linear .sticks:nth-child(2) {
+  animation-delay: 0ms;
+}
+#out .linear .sticks:nth-child(3) {
+  animation-delay: 1000ms;
+}
+#out .linear .sticks:nth-child(4) {
+  animation-delay: 2000ms;
+}
+#out .linear .sticks:nth-child(5) {
+  animation-delay: 3000ms;
+}
+#out .linear .sticks:nth-child(6) {
+  animation-delay: 4000ms;
+}
+#out .linear .sticks:nth-child(7) {
+  animation-delay: 5000ms;
+}
+#out .linear .sticks:nth-child(8) {
+  animation-delay: 6000ms;
+}
+#out .linear .sticks:nth-child(9) {
+  animation-delay: 7000ms;
+}
+#out .linear .sticks:nth-child(10) {
+  animation-delay: 8000ms;
+}
+#out .liveBg > img {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  z-index: 1;
+}
+#out .success div:nth-child(1) {
+  margin-bottom: 150px;
+}
+#out .success div:nth-child(1) h3 {
+  font-family: "MontserratBlack", sans-serif;
+  margin-left: 20px;
+}
+#out .success div:nth-child(2) form input {
+  width: 334px;
+  height: 50px;
+  padding: 16px 28px;
+}
+#out .success div:nth-child(2) form button {
+  width: 161px;
+  margin-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
+  border-radius: 11px;
+}
+#out .success div:nth-child(3) {
+  margin-bottom: 75px;
+}
+#out .success div:nth-child(3) p {
+  margin-top: 100px;
+  color: #ADADAD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+}
+#out .success div:nth-child(4) {
+  cursor: pointer;
+}
+#out .success div:nth-child(4) p {
+  margin-top: 7px;
+  margin-left: 20px;
+  font-family: "MontserratBlack";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 130%;
+}
+#out .success .thankU {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #000;
+}
+
+.popupSuccess {
+  z-index: 1;
+  position: absolute;
+  width: 610px;
+  height: 498px;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+}
+.popupSuccess div {
+  margin-top: 25%;
+}
+.popupSuccess h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  font-family: "MontserratLight", sans-serif;
+  text-align: center;
+}
+.popupSuccess img {
+  margin-left: 40%;
+}
+
+.popupAss {
+  z-index: 1;
+  position: absolute;
+  width: 610px;
+  height: 498px;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+}
+.popupAss .sendAss h3 {
+  margin-left: 20px;
+}
+.popupAss .sendAss div:nth-child(2) {
+  margin: 70px 0 0 0;
+}
+.popupAss .sendAss div:nth-child(2) li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.popupAss .sendAss div:nth-child(2) li button {
+  color: #fff;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 45px;
+  width: 441px;
+  height: 50px;
+}
+.popupAss .sendAss div:nth-child(2) li button:hover {
+  color: #000;
+  border: 1px solid #000;
+  background: #fff;
+  transition: 500ms;
+}
+
+.Phone .forTwitter {
+  padding: 8px;
+  background-color: #F9F9F9;
+  border-radius: 20px;
+}
+.Phone .forFacebook {
+  padding: 8px 13px;
+  background-color: #F9F9F9;
+  border-radius: 20px;
+}
+.Phone h5 {
+  margin: 15px 10px 9px 0;
+}
+.Phone .comment {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  font-family: "MontserratLight" sans-serif;
+}
+.Phone button {
+  margin: 16px 0 20px 0;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+.Phone .btnLast {
+  outline: 1px solid #ccc;
+  outline: none;
+  border-top: 1px solid #d7d7d7;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  color: transparent;
+  background: linear-gradient(1deg, #fff 20%, #000);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.Phone .choise {
+  margin-top: -20px;
+}
+.Phone .choise .btn1 {
+  background: #000;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.Phone .choise button {
+  width: 140px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: 400px;
+}
+.Phone section:nth-child(1) h3 {
+  margin: 50px 0 30px 0;
+}
+.Phone section:nth-child(1) .Phone__Button {
+  width: 160px;
+  height: 35px;
+  background: #000;
+  color: #fff;
+  border-radius: 24px;
+  margin: 30px 0;
+  font-size: 11px;
+}
+.Phone section:nth-child(1) .Phone__weHave p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.Phone section:nth-child(2) img {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.Phone section:nth-child(3) {
+  font-family: "MontserratLight" sans-serif;
+}
+.Phone section:nth-child(3) > div {
+  padding: 20px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  width: 300px;
+  margin: 25px auto 0 auto;
+}
+.Phone section:nth-child(3) > div .devOps {
+  margin: -20px 0;
+}
+.Phone section:nth-child(3) > div h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.Phone section:nth-child(3) > div .span1 {
+  color: rgba(0, 0, 0, 0.7);
+}
+.Phone section:nth-child(3) > div .span2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #000;
+}
+.Phone section:nth-child(3) > div button {
+  width: 106px;
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.Phone section:nth-child(3) .section3__lastBlock {
+  margin-bottom: 45px;
+}
+.Phone section:nth-child(4) {
+  font-family: MontserratLight;
+  background: #F8F8F8;
+  margin: 0 -4.5%;
+}
+.Phone section:nth-child(4) > div {
+  width: 300px;
+}
+.Phone section:nth-child(4) > div .container__first_block {
+  padding-top: 26px;
+}
+.Phone section:nth-child(4) > div > div h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+}
+.Phone section:nth-child(4) > div > div h6, .Phone section:nth-child(4) > div > div span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 112%;
+  margin-top: 22px;
+}
+.Phone section:nth-child(4) > div > div p {
+  margin-top: -8px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.Phone section:nth-child(4) > div > div button {
+  width: 95px;
+  height: 35px;
+  background: #F8F8F8;
+  margin: 40px 0 40px -5px;
+}
+.Phone section:nth-child(4) > div hr {
+  margin: 40px 0 0 20px;
+}
+.Phone section:nth-child(5) {
+  font-family: "MontserratLight" sans-serif;
+  width: 300px;
+}
+.Phone section:nth-child(5) > h5 {
+  margin: 40px 0;
+}
+.Phone section:nth-child(5) .section5__bg {
+  background: #F8F8F8;
+  margin: 0 -5px 30px -5px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-bottom: 20px;
+}
+.Phone section:nth-child(5) .section5__bg h5 {
+  margin: 20px 0 4px 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+.Phone section:nth-child(5) .section5__bg .comment {
+  margin: 20px !important;
+}
+.Phone section:nth-child(5) button {
+  width: 160px;
+  height: 45px;
+  color: rgba(0, 0, 0, 0.67);
+  box-sizing: border-box;
+  border-radius: 24px;
+  margin-bottom: 50px;
+}
+.Phone section:nth-child(6) {
+  font-family: "MontserratLight" sans-serif;
+  margin-bottom: 50px;
+}
+.Phone section:nth-child(6) > div > div {
+  margin-top: 50px;
+}
+.Phone section:nth-child(6) h3 {
+  text-align: center;
+}
+.Phone section:nth-child(6) span {
+  color: rgba(0, 0, 0, 0.7);
+  font-style: normal;
+}
+.Phone section:nth-child(6) .line {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 70px -50px 20px -50px;
+}
+.Phone section:nth-child(6) .line2 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 36px -50px 45px -50px;
+}
+.Phone section:nth-child(6) .review {
+  background: #F8F8F8;
+  border-radius: 15px;
+}
+.Phone section:nth-child(6) .review h5 {
+  text-align: center;
+}
+.Phone section:nth-child(6) .review em {
+  margin-top: 20px;
+}
+.Phone section:nth-child(6) .vektor1 {
+  margin-right: 14px;
+}
+.Phone section:nth-child(6) .vektor2 {
+  margin-left: 14px;
+}
+.Phone section:nth-child(7) {
+  font-family: "MontserratLight" sans-serif;
+}
+.Phone section:nth-child(7) > img {
+  margin: -15% -4.5%;
+}
+.Phone section:nth-child(7) > div {
+  background: #000;
+  color: #fff;
+  margin: 0 -5%;
+  padding: 10% 0 25% 0;
+}
+.Phone section:nth-child(7) .section7__block__bg {
+  width: 110% !important;
+}
+.Phone .section7__block .duck {
+  margin: 30px 0;
+}
+.Phone .section7__block .section7__block__duck {
+  width: 170px;
+  margin: 0 auto;
+}
+.Phone .section7__block .section7__block__duck > div > div:nth-child(1) {
+  margin: 14px;
+}
+.Phone .section7__block .section7__block__duck > div > div:nth-child(2) {
+  line-height: 120%;
+}
+
+footer {
+  font-family: "MontserratLight" sans-serif;
+}
+footer > div {
+  margin-top: 100px;
+}
+footer > div .footer__icons > img {
+  margin: 30px 4px 40px 4px;
+}
+footer .footer__info {
+  width: 280px;
+}
+footer .footer__info .footer__info__gray {
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 28px;
+  margin-left: 20px;
+}
+footer .u {
+  margin: 24px 0 40px 20px;
+}
+footer .by {
+  font-size: 10px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 13px;
+  margin-left: 20px;
+}
+
+/********************/
+.successAfter {
+  width: 610px;
+  height: 498px;
+}
+
+.li__fPhone {
+  position: absolute;
+}
+
+.BtnFPhone, .Phone, .thankUFPhone, .fPhone, footer {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .li__fPhone {
+    position: relative;
+  }
+
+  .BtnFPhone, .Phone, .thankUFPhone, .fPhone, footer {
+    display: block;
+  }
+
+  .thankU, .fDesktop, .BtnFDeskTop {
+    display: none;
+  }
+
+  .btn1 {
+    margin-left: -3% !important;
+  }
+
+  .BtnFPhone button {
+    width: 80px !important;
+    height: 42px !important;
+    font-size: 11px !important;
+    line-height: 150% !important;
+  }
+
+  .buttons div:nth-child(1), .buttons div:nth-child(2) {
+    display: none;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .linear {
+    position: absolute !important;
+    width: 380px !important;
+    height: 400px !important;
+  }
+  .linear img {
+    width: 40px !important;
+    height: 300px !important;
+  }
+  .linear .sticks {
+    animation: move 8s infinite linear !important;
+  }
+  .linear .sticks:nth-child(2) {
+    animation-delay: 0ms !important;
+  }
+  .linear .sticks:nth-child(3) {
+    animation-delay: 800ms !important;
+  }
+  .linear .sticks:nth-child(4) {
+    animation-delay: 1600ms !important;
+  }
+  .linear .sticks:nth-child(5) {
+    animation-delay: 2400ms !important;
+  }
+  .linear .sticks:nth-child(6) {
+    animation-delay: 3200ms !important;
+  }
+  .linear .sticks:nth-child(7) {
+    animation-delay: 4000ms !important;
+  }
+  .linear .sticks:nth-child(8) {
+    animation-delay: 4800ms !important;
+  }
+  .linear .sticks:nth-child(9) {
+    animation-delay: 5600ms !important;
+  }
+  .linear .sticks:nth-child(10) {
+    animation-delay: 6400ms !important;
+  }
+  .linear .sticks:nth-child(11) {
+    animation-delay: 7200ms !important;
+  }
+  .linear .sticks:nth-child(12) {
+    animation-delay: 8000ms !important;
+  }
+  .linear .sticks:nth-child(13) {
+    animation-delay: 8800ms !important;
+  }
+  .linear .sticks:nth-child(14) {
+    animation-delay: 9600ms !important;
+  }
+
+  .liveBg__Logo {
+    width: 300px;
+    height: 300px;
+    top: 100px !important;
+  }
+
+  .block1 {
+    margin: 80% 0 0 20px !important;
+  }
+  .block1 h1 {
+    font-size: 35px !important;
+  }
+  .block1 p {
+    font-size: 15px !important;
+  }
+  .block1 button {
+    width: 150px !important;
+  }
+
+  .success, .sendAss, .popupAss, .popupSuccess, .popup {
+    width: 100% !important;
+  }
+
+  .popupAss div:nth-child(2) {
+    width: 300px;
+  }
+
+  form input {
+    width: 170px !important;
+  }
+  form button {
+    width: 110px !important;
+  }
+
+  .pp, #out {
+    width: 100% !important;
+  }
+
+  .question1 {
+    font-family: "MontserratLight", sans-serif;
+  }
+  .question1 h6 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .question1 .line {
+    border: 1px solid #FFFFFF;
+    width: 70px !important;
+    margin-top: 25px !important;
+  }
+  .question1 p {
+    margin: -20% auto 26px auto !important;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .question1 input {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-size: 11px;
+    line-height: 130%;
+  }
+  .question1 input:focus {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .question1 input[type=search]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .question1 .justify-content-center {
+    margin-top: 14px !important;
+  }
+  .question1 button {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-size: 13px;
+    line-height: 130%;
+    width: 103px;
+    height: 38px;
+    color: #000;
+  }
+
+  .data {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 16px;
+    font-size: 10px;
+    line-height: 150%;
+    font-family: "MontserratLight", sans-serif;
+  }
+
+  .show {
+    position: absolute !important;
+    top: 50%;
+  }
+}
